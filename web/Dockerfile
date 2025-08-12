@@ -57,7 +57,8 @@ COPY --from=builder /app/web/public ./public
 COPY --from=builder /app/web/.next/standalone ./
 COPY --from=builder /app/web/.next/static ./.next/static
 
-COPY docker/entrypoint.sh ./entrypoint.sh
+# Corrected path to copy the entrypoint script from the repository root
+COPY ../docker/entrypoint.sh ./entrypoint.sh
 
 
 # global runtime packages
