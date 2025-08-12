@@ -6,12 +6,6 @@ WORKDIR /app/api
 # Install uv
 ENV UV_VERSION=0.8.9
 
-# Set up a swap file to handle potential memory spikes during build
-RUN fallocate -l 4G /swapfile && \
-    chmod 600 /swapfile && \
-    mkswap /swapfile && \
-    swapon /swapfile
-
 RUN pip install --no-cache-dir uv==${UV_VERSION}
 
 
