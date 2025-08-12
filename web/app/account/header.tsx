@@ -4,7 +4,7 @@ import { RiArrowRightUpLine, RiRobot2Line } from '@remixicon/react'
 import { useRouter } from 'next/navigation'
 import Button from '../components/base/button'
 import Avatar from './avatar'
-import DifyLogo from '@/app/components/base/logo/dify-logo'
+import AaronOSLogo from "@/app/components/base/logo/aaronos-logo"
 import { useCallback } from 'react'
 import { useGlobalPublicStore } from '@/context/global-public-context'
 
@@ -27,7 +27,7 @@ const Header = () => {
               className='block h-[22px] w-auto object-contain'
               alt='Dify logo'
             />
-            : <DifyLogo />}
+            : <AaronOSLogo />}
         </div>
         <div className='h-4 w-[1px] origin-center rotate-[11.31deg] bg-divider-regular' />
         <p className='title-3xl-semi-bold relative mt-[-2px] text-text-primary'>{t('common.account.account')}</p>

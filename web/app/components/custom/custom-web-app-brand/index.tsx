@@ -10,7 +10,7 @@ import {
   RiLoader2Line,
   RiPlayLargeLine,
 } from '@remixicon/react'
-import DifyLogo from '@/app/components/base/logo/dify-logo'
+import AaronOSLogo from "@/app/components/base/logo/aaronos-logo"
 import Switch from '@/app/components/base/switch'
 import Button from '@/app/components/base/button'
 import Divider from '@/app/components/base/divider'
@@ -251,7 +251,7 @@ const CustomWebAppBrand = () => {
                         ? <img src={systemFeatures.branding.workspace_logo} alt='logo' className='block h-5 w-auto' />
                         : webappLogo
                           ? <img src={`${webappLogo}?hash=${imgKey}`} alt='logo' className='block h-5 w-auto' />
-                          : <DifyLogo size='small' />
+                          : <AaronOSLogo size='small' />
                     }
                   </>
                 )}
@@ -313,7 +313,7 @@ const CustomWebAppBrand = () => {
                     ? <img src={systemFeatures.branding.workspace_logo} alt='logo' className='block h-5 w-auto' />
                     : webappLogo
                       ? <img src={`${webappLogo}?hash=${imgKey}`} alt='logo' className='block h-5 w-auto' />
-                      : <DifyLogo size='small' />
+                      : <AaronOSLogo size='small' />
                 }
               </>
             )}

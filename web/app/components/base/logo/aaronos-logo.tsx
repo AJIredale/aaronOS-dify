@@ -13,18 +13,18 @@ export const logoPathMap: Record<LogoStyle, string> = {
 export type LogoSize = 'large' | 'medium' | 'small'
 
 export const logoSizeMap: Record<LogoSize, string> = {
-  large: 'w-16 h-7',
-  medium: 'w-12 h-[22px]',
-  small: 'w-9 h-4',
+  large: 'w-20 h-8',
+  medium: 'w-16 h-7',
+  small: 'w-12 h-5',
 }
 
-type DifyLogoProps = {
+type AaronOSLogoProps = {
   style?: LogoStyle
   size?: LogoSize
   className?: string
 }
 
-const DifyLogo: FC<AaronOSLogoProps> = ({
+const AaronOSLogo: FC<AaronOSLogoProps> = ({
   style = 'default',
   size = 'medium',
   className,
@@ -36,9 +36,10 @@ const DifyLogo: FC<AaronOSLogoProps> = ({
     <img
       src={`${basePath}${logoPathMap[themedStyle]}`}
       className={classNames('block object-contain', logoSizeMap[size], className)}
-      alt='Dify logo'
+      alt='aaronOS logo'
     />
   )
 }
 
-export default DifyLogo
+export default AaronOSLogo
+

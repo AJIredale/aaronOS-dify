@@ -31,7 +31,7 @@ const Header = () => {
           className='block h-7 w-auto object-contain'
           alt='logo'
         />
-        : <DifyLogo size='large' />}
+        : <AaronOSLogo size='large' />}
       <div className='flex items-center gap-1'>
         <LocaleSigninSelect
           value={locale}
