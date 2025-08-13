@@ -12,8 +12,6 @@ RUN npm install -g pnpm
 # =================================================================
 FROM base AS deps
 WORKDIR /app
-COPY pnpm-lock.yaml .
-COPY pnpm-workspace.yaml .
 COPY api/pyproject.toml ./api/
 COPY web/package.json ./web/
 RUN pnpm install --filter web --legacy-peer-deps --shamefully-hoist
